@@ -56,7 +56,7 @@ input {
 }
 .list__item-icon {
     position: absolute;
-    right: -50px;
+    right: 0px;
     width: 45px;
     height: 45px;
     text-align: center;
@@ -68,9 +68,9 @@ input {
     align-items: center;
     justify-content: center;
 }
-.list__item:hover .list__item-icon {
+/* .list__item:hover .list__item-icon {
     right: 0px;
-}
+} */
 .add__btn {
     pointer-events: none;
 }
