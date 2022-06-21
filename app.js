@@ -32,7 +32,7 @@ addBtn.addEventListener("click", function () {
 //show todo
 function showTodo() {
     const getLocalstorage = localStorage.getItem("new-todo");
-    listArr = JSON.parse(getLocalstorage);
+    listArr = JSON.parse(getLocalstorage) || [];
     let liItem = "";
     listArr.forEach(function (el, index) {
         liItem += `<li class="list__item" >
