@@ -122,3 +122,10 @@ input {
 .btn:hover {
     filter: brightness(0.9);
 }
+
+@media only screen and (max-width: 768px) {
+  .list__item-icon{
+      right: 0;
+    }
+    
+}
