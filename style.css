@@ -125,7 +125,7 @@ input {
 
 @media only screen and (max-width: 768px) {
   .list__item-icon{
-      right: 0;
+      right: 0px;
     }
     
 }
