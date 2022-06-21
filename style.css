@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(#03c7f8, #1184dc);
+    display: flex;
+    justify-content: center;
+}
+.main {
+    background: white;
+    width: 350px;
+    height: auto;
+    max-height: 500px;
+    margin: 100px 0;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.input__todo {
+    margin: 10px 0;
+    width: 100%;
+}
+input {
+    padding: 8px 12px;
+    outline: none;
+    width: 85%;
+    flex: 1;
+}
+
+.input__todo i {
+    background-color: rgb(247, 0, 255);
+    color: white;
+    padding: 9px 12px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.input__todo i:hover {
+    filter: brightness(0.9);
+}
+.list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+.list__item {
+    margin-top: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.list__item:hover {
+    filter: brightness(0.9);
+}
+.list__item-icon {
+    position: absolute;
+    right: -50px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    background-color: red;
+    border-radius: 4px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list__item:hover .list__item-icon {
+    right: 0px;
+}
+.add__btn {
+    pointer-events: none;
+}
+.add__btn.active {
+    pointer-events: unset;
+}
+.trash {
+    color: white !important;
+    cursor: pointer;
+}
+.edit {
+    color: white !important;
+    margin-right: 10px !important;
+    display: block;
+}
+.list__item {
+    list-style: none;
+    background-color: #ccc;
+    padding: 10px 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list__item label {
+    width: 80%;
+    word-wrap: break-word;
+}
+.completed {
+    text-decoration: line-through;
+}
+.btn__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.btn {
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}
